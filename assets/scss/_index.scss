@@ -1,0 +1,301 @@
+body {
+    background-color: $black;
+    font-family: "Poppins";
+}
+.heroSection {
+    padding-top: 110px;
+    height: 100vh;
+    & .imageCol1 {
+
+    }
+    & .mainCol {
+    }
+    & .imageCol2 {
+        position: relative;
+        & .rotateStar {
+            position: absolute;
+            animation: rotate 5s linear infinite;
+            transition: 0.3s ease-in-out;
+            height: 180px;
+            left: 20px;
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(90deg);
+            }
+            50% {
+                transform: rotate(180deg);
+            }
+            75% {
+                transform: rotate(270deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+            
+        }
+    }
+    & .heroImg{
+        width: 80%;
+        transition: 0.3s ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+        }
+        &.heroImg1 {}
+        &.heroImg2 {}
+    }
+    & .animateBox {
+        height: 290px;
+        position: relative;
+        & img {
+            height: 290px;
+            animation: move 8s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            position: relative;
+        }
+        @keyframes move {
+            0%  { top: 0px; }
+            30% { top: calc(-100% - 1.5rem); }
+            33% { top: calc(-100% - 1.5rem); }
+            66% { top: calc(-200% - 3rem); }
+            70% { top: calc(-200% - 3rem); }
+            97% { top: 0px; }
+            100% { top: 0px; }
+          }
+    }
+    & .heroText {
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 29px;
+        line-height: 44px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 29px;
+        margin-top: 12px;
+    }
+    & .heroDes {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 62px;
+    }
+    & .heroBtn {
+        width: 335px;
+        height: 60px;
+        border: 1px solid #FFFFFF;
+        border-radius: 45px;
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+}
+
+
+@media (max-width: 1399px) {
+    .heroSection {
+        & .imageCol1 {
+            width: 300px;
+    
+        }
+        & .mainCol {
+            width: 400px;
+            overflow: hidden;
+        }
+        & .imageCol2 {
+            width: 300px;
+    
+        }
+        & .heroImg{
+            width: 100%;
+            &.heroImg1 {}
+            &.heroImg2 {}
+        }
+        & .animateBox {
+            height: 250px;
+            & img {
+                height: 250px;
+            }
+        }
+        & .heroText {
+            margin-bottom: 20px;
+        }
+        & .heroDes {
+            margin-bottom: 40px;
+        }
+        & .heroBtn {
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .heroSection {
+        & .imageCol1 {
+            width: 270px;
+    
+        }
+        & .mainCol {
+            width: 400px;
+            overflow: hidden;
+        }
+        & .imageCol2 {
+            width: 270px;
+            
+        & .rotateStar {
+            height: 120px;
+            left: 20px;
+        }
+    
+        }
+        & .heroImg{
+            width: 100%;
+            &.heroImg1 {}
+            &.heroImg2 {}
+        }
+        & .animateBox {
+            height: 220px;
+            & img {
+                height: 220px;
+            }
+        }
+        & .heroText {
+            margin-bottom: 20px;
+        }
+        & .heroDes {
+            margin-bottom: 35px;
+            font-size: 16px;
+            line-height: 25px;
+        }
+        & .heroBtn {
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .heroSection {
+        & .imageCol1 {
+            width: 270px;
+            position: absolute;
+            left: 0;
+    
+        }
+        & .mainCol {
+            position: relative;
+            z-index: 5;
+            width: 480px;
+        }
+        & .imageCol2 {
+            width: 270px;
+            position: absolute;
+            right: 0;
+    
+        }
+        & .heroImg{
+            &.heroImg1 {}
+            &.heroImg2 {}
+        }
+        & .animateBox {
+            height: 200px;
+            & img {
+                height: 200px;
+            }
+        }
+        & .heroText {
+        }
+        & .heroDes {
+        }
+        & .heroBtn {
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .heroSection {
+        & .imageCol1 {
+            width: 270px;
+            left: -80px;
+            top: 0;
+    
+        }
+        & .mainCol {
+            width: 480px;
+        }
+        & .imageCol2 {
+            width: 270px;
+            right: -80px;
+            top: 0;
+    
+        }
+        & .heroImg{
+            &.heroImg1 {}
+            &.heroImg2 {}
+        }
+        & .animateBox {
+            height: 170px;
+            & img {
+                height: 170px;
+            }
+        }
+        & .heroText {
+        }
+        & .heroDes {
+        }
+        & .heroBtn {
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .heroSection {
+        & .imageCol1 {
+            width: 200px;
+            left: -60px;
+            top: 0px;
+    
+        }
+        & .mainCol {
+            width: 480px;
+        }
+        & .imageCol2 {
+            width: 200px;
+            right: -60px;
+            top: 0px;
+        }
+        & .heroImg{
+            &.heroImg1 {}
+            &.heroImg2 {}
+        }
+        & .animateBox {
+            height: 120px;
+            & img {
+                height: 120px;
+            }
+        }
+        & .heroText {
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 100px;
+        }
+        & .heroDes {
+            font-size: 15px;
+            line-height: 22px;
+        }
+        & .heroBtn {
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+}
